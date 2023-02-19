@@ -150,6 +150,8 @@ print(s2 not in s1)
 
 
 print()
+print()
+# ---------------------------- END ------------------------
 #String Concatenation using + Operator
 
 var1 = "Riyad's mood is "
@@ -157,6 +159,9 @@ var2 = "sad right now"
 var3 = var1+var2
 print(var3)
 
+
+print()
+# ---------------------------- END ------------------------
 # Python String index() Method allows a user to find the index of the first occurrence of an existing substring inside a given string.
 
 # Syntax:  string_obj.index(substring, begp, endp)
@@ -186,7 +191,64 @@ pos = ch.index(ch1, 2)
 print("The first position of geeks after 2nd index : ", end="")
 print(pos)
 
+print()
+# ---------------------------- END ------------------------
 # The index() method is similar to find().
 # The only difference is find() returns -1 if the searched string is not found and index() throws an exception in this case.
+
+test_string = "1234gfg4321"
+# finding gfg in string segment 'gfg4'
+print(test_string.index('gfg', 4, 8))
+
+# finding "21" in string segment 'gfg4321'
+print(test_string.index("21", 8, len(test_string)))
+
+# finding "32" in string segment 'fg432' using negative index
+print(test_string.index("32", 5, -1))
+
+print()
+# ---------------------------- END ------------------------
+# Python String rindex() method returns the highest index of the substring inside the string if the substring is found.
+# Otherwise, it raises ValueError.
+# Example 1: Python String rindex() Method with start or end index
+# If we provide the start and end value to check inside a string, Python String rindex() will search only inside that range.
+
+string = "ring ring"
+
+# checks for the substring in the range 0-4 of the string
+print(string.rindex("ring", 0, 4))
+
+# same as using 0 & 4 as start, end value
+print(string.rindex("ring", 0, -5))
+
+string = "101001010"
+# since there are no '101' substring after string[0:3]
+# thus it will take the last occurrence of '101'
+print(string.rindex('101', 2))
+
+string = "ring ring"
+
+# search for the substring,
+# from right in the whole string
+print(string.rindex("ring"))
+
+string = "geeks"
+# this will return the right-most 'e'
+print(string.rindex('e'))
+
+print()
+# ---------------------------- END ------------------------
+
+print()
+# ----------- String Operations Part (2) -----------
+print("----------- String Operations Part (2) -----------")
+print()
+
+# Case Changing of Strings
+# The below functions are used to change the case of the strings.
+# lower(): Converts all uppercase characters in a string into lowercase.
+# upper(): Converts all lowercase characters in a string into uppercase.
+# title(): Convert string to title case.
+
 
 
