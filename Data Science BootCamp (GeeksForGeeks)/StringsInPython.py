@@ -1,4 +1,3 @@
-
 print()
 # ----------- Strings in Python -----------
 print("----------- Strings in Python -----------")
@@ -48,8 +47,8 @@ print("Last character of the string: ", string1[-1])
 print()
 # ---------------------------- END ------------------------
 
-#Program to reverse a string
-print("Reverse of the string:", string1[::-1] )
+# Program to reverse a string
+print("Reverse of the string:", string1[::-1])
 print()
 # ---------------------------- END ------------------------
 
@@ -143,22 +142,20 @@ print()
 # in operator: The ‘in’ operator is used to check if a character/ substring/ element exists in a sequence or not.
 # Evaluate to True if it finds the specified element in a sequence otherwise False.
 
-s1='geeksforgeeks'
-s2='geeks'
+s1 = 'geeksforgeeks'
+s2 = 'geeks'
 print(s2 in s1)
 print(s2 not in s1)
-
 
 print()
 print()
 # ---------------------------- END ------------------------
-#String Concatenation using + Operator
+# String Concatenation using + Operator
 
 var1 = "Riyad's mood is "
 var2 = "sad right now"
-var3 = var1+var2
+var3 = var1 + var2
 print(var3)
-
 
 print()
 # ---------------------------- END ------------------------
@@ -244,11 +241,22 @@ print()
 print("----------- String Operations Part (2) -----------")
 print()
 
+
 # Case Changing of Strings
 # The below functions are used to change the case of the strings.
 # lower(): Converts all uppercase characters in a string into lowercase.
 # upper(): Converts all lowercase characters in a string into uppercase.
 # title(): Convert string to title case.
 
+def factorial(n):
+    x = 1
+    for i in range(1,n+1):
+        fact = 1
+        for j in range(1,x+1):
+            fact *= j
+        print(f'The factorial of {x} is :', fact)
+        x += 1
 
+
+factorial(25)
 
