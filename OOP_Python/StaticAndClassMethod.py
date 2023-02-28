@@ -24,8 +24,17 @@ print(Person.number_of_person())
 
 
 # ------------ Static Method ------------
+class Math:
 
+    @staticmethod
+    def add5(x):
+        return x+5
 
+    @staticmethod
+    def pr():
+        print("Success")
+
+Math.pr()
 
 
 
