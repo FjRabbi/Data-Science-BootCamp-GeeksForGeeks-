@@ -1,6 +1,6 @@
 
-#----------- Python While Loop-----------
 
+#----------- Python While Loop-----------
 print("----------- Python While Loop-----------")
 
 
@@ -57,12 +57,14 @@ for i in l:
     print(i, end= " ")
 print("\n")
 
+
 # Iterating over dictionary
 print("Dictionary Iteration")
 d = dict()
 d['Md Fajle Rabbi Islam'] = 12317
 d['Md Abdullah Al Mahmud'] = 12316
 d['Nishat Anzum Nova'] = 12132
+
 
 for i in d:
     print("% s % d"% (i,d[i]))
@@ -82,7 +84,7 @@ print("----------- Break In Python -----------")
 i = 0
 
 for i in range (10):
-    if i==10 :
+    if i==5 :
         break
     print(i, end=' ')
 print("\nOut of the loop")
@@ -105,7 +107,7 @@ for var in "SherlockHolmes":
 
     print(var, end='')
 
-
+print("\n")
 # ----------- Nested Loop in Python -----------
 print("----------- Nested Loop in Python -----------")
 
@@ -401,5 +403,20 @@ s = "Bangladesh   is   c I love  you country"#int(input())
 x = capCount(s)
 print(x)
 
+
+print()
+#Problem Special:
+print("Factorial Special")
+def factorial(n):
+    x = 1
+    for i in range(1,n+1):
+        fact = 1
+        for j in range(1,x+1):
+            fact *= j
+        print(f'The factorial of {x} is :', fact)
+        x += 1
+
+
+factorial(25)
 
 # ---------- End ---------- #
